@@ -11,9 +11,9 @@ def call() {
 void environmentSetUp() {
  getAPIKeyFromCredentials()
  setGitEnvironmentVariables()
- env.DEVOPS_SERVER_NAME = "cddirector.io"
+ env.DEVOPS_SERVER_NAME = "nginx-plus-route-443-cdd-bizops.app.gdue4.saasdev.broadcom.com"
  env.DEVOPS_SERVER_PORT = "443"
- env.DEVOPS_TENANT_ID = "4a71bb18-2d70-4f46-a2cc-957a2f48320f"
+ env.DEVOPS_TENANT_ID = "cecdf0b6-bac8-4305-b8a6-3ec26c8e4916"
  echo "DEVOPS_TENANT_ID: [$env.DEVOPS_TENANT_ID]"
  env.DEVOPS_USE_SSL = true
  env.DEVOPS_APPLICATION_NAME = "${env.GIT_URL.replaceFirst(/^.*\/([^\/]+?).git$/, '$1')}"
