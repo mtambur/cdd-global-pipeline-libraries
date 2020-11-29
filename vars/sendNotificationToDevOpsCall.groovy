@@ -75,7 +75,7 @@ void sendNotificationToDevOps() {
   fileSourceName: '${DEVOPS_APPLICATION_NAME}',
   fileSourceParameters: '{"branch":"${DEVOPS_APPLICATION_VERSION}"}',
   dslFilename: 'release.json',
-  dslParameters: '{ "DIL_REPOSITORY_BRANCH": "${DEVOPS_APPLICATION_VERSION}" }',
+  dslParameters: '{ "DIL_REPOSITORY_NAME": "${DEVOPS_APPLICATION_NAME}", "DIL_REPOSITORY_BRANCH": "${DEVOPS_APPLICATION_VERSION}" }',
   ignoreNonexistentApplication: true
  echo '----------Jenkins Pipeline completed successfully--------------'
 }
